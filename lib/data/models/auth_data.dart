@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-part 'auth_data.g.dart';
+part '../adapters/auth_data.g.dart';
 
 @HiveType(typeId: 0)
 class AuthData {

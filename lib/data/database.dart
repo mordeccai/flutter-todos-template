@@ -19,8 +19,8 @@ class Database {
 
   init() async {
     await Hive.initFlutter();
-    _registerAdapters();
-    _initBoxes();
+    await _registerAdapters();
+    await _initBoxes();
   }
 }
 
