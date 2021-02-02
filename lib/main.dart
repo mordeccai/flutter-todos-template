@@ -16,7 +16,7 @@ class TodosApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: authService),
       ],
       child: MaterialApp(
-        title: 'Todos',
+        title: Config.appName,
         theme: Config.theme,
         initialRoute: RouteConfig.defaultRoute,
         routes: routes,
