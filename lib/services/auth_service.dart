@@ -31,6 +31,11 @@ class AuthService extends ChangeNotifier {
   void _saveAuthData(data) {
     db.authDataBox.add(AuthData.fromMap(data));
   }
+
+  Future<bool> logout() async {
+    await db.clearData();
+    return true;
+  }
 }
 
 var authService = AuthService();

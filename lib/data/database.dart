@@ -17,6 +17,10 @@ class Database {
     Hive.registerAdapter(UsertypeAdapter());
   }
 
+  Future clearData() async {
+    await authDataBox.clear();
+  }
+
   init() async {
     await Hive.initFlutter();
     await _registerAdapters();
